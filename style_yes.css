@@ -1,0 +1,47 @@
+body{
+    margin: 15%;
+    background-color: mediumpurple;
+}
+
+.letter{
+    border: 2px solid rgb(120, 100, 217);
+}
+
+.gif{
+    width: 70px;
+    border-radius: 50%;
+}
+
+.span{
+    color: rgb(4, 22, 223);
+    text-align: left;
+}
+
+p{
+    
+        font-family: 'Indie Flower', cursive;
+        font-size: .75em;
+        color: #2c3e50;
+        line-height: 1.8;
+        text-align: center;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+h3{
+    color: #9bd6c5;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.header{
+    h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 1em;
+        text-align: center;
+        color: #FF6F61;
+        animation: bounce 1s ease infinite;
+    }
+}

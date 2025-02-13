@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title> For my Lover </title>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1> Hey! </h1>
+            <h1>click yes or no </h1>
+
+            <div class="buttons"> 
+
+                <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+
+                <script>
+
+                    function nextPage(){
+                        window.location.href = "yes.html";
+                    }
+
+                    function moveButton(){
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) -85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) -48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+
+                    }
+
+
+                </script>
+            </div> 
+        </div>
+            
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    </body>
+</html>
